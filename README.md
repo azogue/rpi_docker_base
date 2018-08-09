@@ -41,11 +41,6 @@ docker build -t $DOCKER_ID_USER/py36_base:rpi3 .
 docker run -it --rm --name test_py36_base_rpi3 $DOCKER_ID_USER/py36_base:rpi3 /bin/sh
 # And push
 docker push $DOCKER_ID_USER/py36_base:rpi3
-
-cd build_x64
-export DOCKER_ID_USER=azogue
-docker build -t $DOCKER_ID_USER/py36_base:x64 .
-docker push $DOCKER_ID_USER/py36_base:x64
 ```
 
 * For a 'x64' build:
