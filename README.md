@@ -2,6 +2,10 @@
 
 This docker container is intended to run Python 3.6 apps in a Raspberry PI 3. It is built from `resin/raspberrypi3-python:3.6`, and contains **Python 3.6.6**, **`numpy==1.14.3`**, **`pandas==0.23.4`** and **`scipy==1.1.0`**.
 
+These are packages that require a lot of time to obtain, because there are no _wheels_ for python 3.6 yet.
+
+As I need them very often, and I like to work with python 3.6 (faster, f-strings, async/await syntax, ...), this container comes in handy to start working quickly when I deploy new services in my raspberries fleet.
+
 ## Pull from Docker Hub
 
 ```
